@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["es2018"],
-    "declaration": false,
+    "declaration": true,
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -10,5 +10,6 @@
     "target": "es5",
     "typeRoots": ["node_modules/@types"],
     "outDir": "./dist"
-  }
+  },
+  "exclude": ["node_modules", "tests/"]
 }

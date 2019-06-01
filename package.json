@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.1"
   }
